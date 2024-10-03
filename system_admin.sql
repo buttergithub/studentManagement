@@ -139,3 +139,9 @@ FROM Students
 WHERE department_id = (SELECT department_id FROM Departments WHERE department_name = 'Mathematics');
 
 
+-- Insert a new student
+INSERT INTO Students (student_id, student_name, department_id)
+VALUES (103, 'Alice Johnson', 2);
+
+-- Commit the transaction if everything is fine
+COMMIT;
